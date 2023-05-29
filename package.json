@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "release": "semantic-release --dry-run --no-ci"
+    "release": "semantic-release"
   },
   "devDependencies": {
     "lerna": "^6.6.2",
