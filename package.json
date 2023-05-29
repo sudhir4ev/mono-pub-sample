@@ -19,6 +19,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudhir4ev/mono-pub-sample.git"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
