@@ -7,10 +7,13 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "release": "semantic-release"
+    "prerelease": "lerna-semantic-release pre",
+    "release": "semantic-release perform",
+    "postrelease": "semantic-release post"
   },
   "devDependencies": {
     "lerna": "^6.6.2",
+    "lerna-semantic-release": "^9.1.0",
     "semantic-release": "^21.0.2"
   },
   "workspaces": [
