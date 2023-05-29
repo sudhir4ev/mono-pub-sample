@@ -6,13 +6,22 @@
   "author": "rihdus",
   "license": "UNLICENSED",
   "private": true,
+  "scripts": {
+    "release": "semantic-release --dry-run --no-ci"
+  },
   "devDependencies": {
-    "lerna": "^6.6.2"
+    "lerna": "^6.6.2",
+    "semantic-release": "^21.0.2"
   },
   "workspaces": [
     "packages/*"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
