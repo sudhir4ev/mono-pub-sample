@@ -7,13 +7,14 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "release": "semantic-release",
-    "release:a1": "node scripts/prepare-release.js packages/a1"
+    "prerelease": "node scripts/prepare-release.js a1",
+    "release": "node scripts/release.js a1"
   },
   "devDependencies": {
     "lerna": "^6.6.2",
     "prettier": "^2.8.8",
-    "semantic-release": "^21.0.2"
+    "semantic-release": "^21.0.2",
+    "stream-buffers": "^3.0.2"
   },
   "workspaces": [
     "packages/*"

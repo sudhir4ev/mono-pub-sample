@@ -2,12 +2,16 @@
 const assert = require("assert");
 const path = require("path");
 const fs = require("fs");
+const utils = require("./utils");
 
 const [, , targetPackage] = process.argv;
 
-const targetPackagePath = path.resolve(targetPackage, "package.json");
-
 (async () => {
+
+  const workspaces = await utils.workspacesInfo();
+  const workspaceInfo = workspaces[targetPackage]
+  const targetPackagePath = path.resolve(workspaceInfo.location, "package.json");
+
   assert(targetPackage, "No package path specified");
   assert(
     fs.existsSync(targetPackagePath),
@@ -40,7 +44,7 @@ const targetPackagePath = path.resolve(targetPackage, "package.json");
     // scripts.release
     const scripts = {
       ...target.scripts,
-      release: source.scripts.release,
+      release: ``,
     };
 
     return {
