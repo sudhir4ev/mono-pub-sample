@@ -7,6 +7,8 @@ async function workspacesInfo() {
   const lines = workspacesOutput.stdout.split(/\n/);
   const workspacesStr = lines.slice(1, lines.length - 2).join("");
 
+  console.log(workspacesStr)
+
   return JSON.parse(workspacesStr);
 }
 
