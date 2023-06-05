@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "prerelease": "node scripts/prepare-release.js a1",
+    "prerelease": "node scripts/prepare-release.js @sudhir4ev/a1",
     "release": "cd packages/a1 && semantic-release"
   },
   "devDependencies": {
