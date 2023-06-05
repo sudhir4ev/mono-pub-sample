@@ -1,7 +1,7 @@
 const a2 = {
     type: 'module',
     value: 'a2',
-    version: '1'
+    version: '2'
 }
 
 export default a2
