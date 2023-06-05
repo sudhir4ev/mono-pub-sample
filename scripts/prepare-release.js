@@ -24,7 +24,7 @@ const [, , targetPackage] = process.argv;
   const newTargetPkgJson = mergePackageJson(targetPkgJson, rootPkgJson);
 
   fs.writeFileSync(
-    targetPackagePath + "-",
+    targetPackagePath,
     JSON.stringify(newTargetPkgJson, null, 2)
   );
 

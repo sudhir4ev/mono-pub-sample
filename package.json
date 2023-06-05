@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "prerelease": "node scripts/prepare-release.js a1",
-    "release": "node scripts/release.js a1"
+    "release": "cd packages/a1 && semantic-release --dry-run"
   },
   "devDependencies": {
     "lerna": "^6.6.2",
