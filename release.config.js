@@ -1,3 +1,5 @@
+const packageRoot = "packages/a1"
+
 module.exports = {
   plugins: [
     [
@@ -20,7 +22,8 @@ module.exports = {
     [
       "@semantic-release/npm",
       {
-        pkgRoot: "packages/a1"
+        pkgRoot: `${packageRoot}`,
+        commitPaths: [`${packageRoot}/*`]
       },
     ],
     // "@semantic-release/release-notes-generator"
