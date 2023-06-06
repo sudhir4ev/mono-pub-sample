@@ -1,6 +1,7 @@
 const packageRoot = "packages/a1"
 
 module.exports = {
+  commitPaths: [`${packageRoot}/*`],
   plugins: [
     [
       "@semantic-release/commit-analyzer",
@@ -22,8 +23,7 @@ module.exports = {
     [
       "@semantic-release/npm",
       {
-        pkgRoot: `${packageRoot}`,
-        commitPaths: [`${packageRoot}/*`]
+        pkgRoot: `${packageRoot}`
       },
     ],
     // "@semantic-release/release-notes-generator"
