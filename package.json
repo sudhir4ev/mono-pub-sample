@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "release": "sh scripts/release.sh @sudhir4ev/a1"
+    "release": "sh scripts/release.sh"
   },
   "devDependencies": {
     "lerna": "^6.6.2",

@@ -13,6 +13,8 @@ assert(packageName, "No package name provided");
   const workspaces = await utils.workspacesInfo();
   const workspaceInfo = workspaces[packageName];
 
+  assert(workspaceInfo, `No workspace with name \`${packageName}\` found`);
+
   await utils.runTask(`Configure package.json for \`${packageName}\``, () =>
     prepareTargetPackage(packageName, { rootPkgJson, workspaceInfo })
   );

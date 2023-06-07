@@ -1,5 +1,7 @@
 #!/bin/sh
+set -e
 
-node scripts/prepare-release.js @sudhir4ev/a1
+PACKAGE_NAME=$1
 
-node scripts/release.js @sudhir4ev/a1
+node scripts/prepare-release.js ${PACKAGE_NAME}
+node scripts/release.js ${PACKAGE_NAME}
