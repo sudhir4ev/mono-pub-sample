@@ -11,6 +11,13 @@ async function workspacesInfo() {
   return JSON.parse(workspacesStr);
 }
 
+async function runTask(taskLog, taskFn) {
+  console.log(`>> ${taskLog}`);
+  return taskFn()
+}
+
 module.exports = {
   workspacesInfo,
+  runTask
 };
+
