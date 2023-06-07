@@ -12,7 +12,7 @@ async function workspacesInfo() {
 }
 
 async function runTask(taskLog, taskFn) {
-  console.log(`>> ${taskLog}`);
+  console.log(`> ${taskLog}`);
   return taskFn()
 }
 
