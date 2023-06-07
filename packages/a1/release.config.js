@@ -1,4 +1,4 @@
 const defineReleaseConfig = require("../../release.base.config");
-const packageRoot = ["packages/a1"];
+const packageRoot = ["./"];
 
 module.exports = defineReleaseConfig(packageRoot);
