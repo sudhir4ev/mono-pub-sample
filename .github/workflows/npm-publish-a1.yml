@@ -4,9 +4,7 @@
 name: npm package - @sudhir4ev/a1
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
 
