@@ -21,11 +21,7 @@ module.exports = function defineReleaseConfig(packageRoot) {
       ],
       [
         "@semantic-release/npm",
-        {
-          pkgRoot: `${packageRoot}`
-        },
       ],
-      // "@semantic-release/release-notes-generator"
     ],
   }
 };

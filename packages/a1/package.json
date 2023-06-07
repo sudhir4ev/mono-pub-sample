@@ -2,5 +2,16 @@
   "name": "@sudhir4ev/a1",
   "version": "1.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "scripts": {
+    "release": ""
+  }
 }
