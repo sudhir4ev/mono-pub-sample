@@ -5,5 +5,16 @@
   "license": "MIT",
   "dependencies": {
     "@sudhir4ev/a1": "^1.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "scripts": {
+    "release": ""
   }
 }

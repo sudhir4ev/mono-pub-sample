@@ -1,6 +1,6 @@
 module.exports = function defineReleaseConfig(packageRoot) {
   return {
-    commitPaths: [`${packageRoot}/*`],
+    commitPaths: [...packageRoot],
     plugins: [
       [
         "@semantic-release/commit-analyzer",
