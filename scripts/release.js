@@ -16,8 +16,8 @@ assert(packageName, "No package name provided");
   const packagePath = path.resolve(workspaceInfo.location);
 
   await utils.runTask(`Running release for \`${packageName}\``, async () => {
-    console.log(`path: \`${workspaceInfo.location}\``);
-    console.log(`semantic-release`);
+    console.log(`>> path: \`${workspaceInfo.location}\``);
+    console.log(`>> semantic-release`);
 
     const releaseProcess = exec(
       `cd ${packagePath} && semantic-release --colors`
